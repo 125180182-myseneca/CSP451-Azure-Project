@@ -8,14 +8,17 @@
 * ##### GITHUB USER_ID: 125180182-myseneca
 * ##### TEACHER’S NAME: Atoosa Nasiri
 ___
+
 ### Table of Contents
 
 1. [Assignment Instructions](#)
 2. [Assignment Objectives](#)
-
+   
+---
 
 ![Image](https://news.cgtn.com/news/2020-09-28/Wuhan-s-Yellow-Crane-Tower-to-launch-night-tours-U9eZmzNEpG/img/1c2df279aec7434faead0b4f72162f8c/1c2df279aec7434faead0b4f72162f8c.jpeg)
 
+---
 
 ```
 print("This is a single-line code block!")
@@ -28,9 +31,16 @@ read directory_path
 ls $directory_path
 
 ```
+---
 
 | This     | Is     | A           | Sample | Table  |
 |----------|--------|-------------|--------|--------|
 | With     | Random | Information | For    | My     |
 | Course   | CSP451 | In          | The    | Winter |
 | Semester |        |             |        |        |
+
+---
+
+<p> This is a sample <a href="https://github.com/125180182-myseneca/CSP451-Azure-Project">hyperlink</a> </p>
+
+
