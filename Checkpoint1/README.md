@@ -28,3 +28,9 @@ read directory_path
 ls $directory_path
 
 ```
+
+| This     | Is     | A           | Sample | Table  |
+|----------|--------|-------------|--------|--------|
+| With     | Random | Information | For    | My     |
+| Course   | CSP451 | In          | The    | Winter |
+| Semester |        |             |        |        |
