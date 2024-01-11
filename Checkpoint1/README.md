@@ -33,6 +33,9 @@ ls $directory_path
 ```
 ---
 
+
+---
+
 | This     | Is     | A           | Sample | Table  |
 |----------|--------|-------------|--------|--------|
 | With     | Random | Information | For    | My     |
