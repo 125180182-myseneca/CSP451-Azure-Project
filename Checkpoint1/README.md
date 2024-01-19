@@ -11,8 +11,9 @@ ___
 
 ### Table of Contents
 
-1. [Assignment Instructions](#)
-2. [Assignment Objectives](#)
+1. [Image](#An-Image)
+2. [Single line code snippet](#Single-line-code-snippet)
+3. [Multi line code snippet](#Multi-line-code-snippet-(preferably-bash-script))
    
 ---
 ### An Image
