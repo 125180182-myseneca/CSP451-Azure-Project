@@ -19,7 +19,6 @@ ___
 6. [Sample Hyperlink](#sample-hyperlink)
 ---
 ### An Image
-![Image](https://news.cgtn.com/news/2020-09-28/Wuhan-s-Yellow-Crane-Tower-to-launch-night-tours-U9eZmzNEpG/img/1c2df279aec7434faead0b4f72162f8c/1c2df279aec7434faead0b4f72162f8c.jpeg)
 ![Image](1.png)
 
 ---
