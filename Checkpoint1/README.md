@@ -13,7 +13,7 @@ ___
 
 1. [Image](#An-Image)
 2. [Single line code snippet](#Single-line-code-snippet)
-3. [Multi line code snippet](#Multi-line-code-snippet-(preferably-bash-script))
+3. [Multi line code snippet](#Multi-line-code-snippet)
    
 ---
 ### An Image
@@ -25,7 +25,7 @@ ___
 ```
 print("This is a single-line code block!")
 ```
-### Multi line code snippet (preferably bash script)
+### Multi line code snippet
 ```
 echo "Hello, this is a multi-line code block!"
 echo "Provide a directory to list:"
