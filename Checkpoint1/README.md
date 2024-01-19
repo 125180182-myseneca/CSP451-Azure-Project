@@ -11,10 +11,12 @@ ___
 
 ### Table of Contents
 
-1. [Image](#An-Image)
+1. [An Image](#An-Image)
 2. [Single line code snippet](#Single-line-code-snippet)
 3. [Multi line code snippet](#Multi-line-code-snippet)
-   
+4. [Sample .json objects](#sample-.json-objects)
+5. [Sample Table](#sample-table)
+6. [Sample Hyperlink](#sample-hyperlink)
 ---
 ### An Image
 ![Image](https://news.cgtn.com/news/2020-09-28/Wuhan-s-Yellow-Crane-Tower-to-launch-night-tours-U9eZmzNEpG/img/1c2df279aec7434faead0b4f72162f8c/1c2df279aec7434faead0b4f72162f8c.jpeg)
@@ -33,7 +35,7 @@ ls $directory_path
 
 ```
 ---
-### sample .json objects
+### Sample .json objects
 ```json
 {
    "name":"Thuan"
