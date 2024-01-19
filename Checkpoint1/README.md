@@ -35,7 +35,7 @@ ls $directory_path
 ---
 ### sample .json objects
 ```json
-Student = {
+{
    "name":"Thuan"
    "age": 23
    "course":"CSP451"
@@ -43,7 +43,7 @@ Student = {
 }
 ```
 ```json
-Food = {
+{
    "Fruit":"Orange"
    "Vegetable":"Cabbage"
 }
