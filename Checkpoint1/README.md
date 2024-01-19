@@ -22,11 +22,10 @@ ___
 
 ---
 ### Single line code snippet
-```
-print("This is a single-line code block!")
-```
+`print("This is a single-line code block!")`
 ### Multi line code snippet
 ```
+#!/bin/bash
 echo "Hello, this is a multi-line code block!"
 echo "Provide a directory to list:"
 read directory_path
