@@ -22,7 +22,7 @@ ___
 
 ---
 ### Single line code snippet
-`print("This is a single-line code block!")`
+I am using single quotes as I cannot afford a new line! `print("This is a single-line code block!")` It can be used within text.
 ### Multi line code snippet
 ```
 #!/bin/bash
@@ -35,7 +35,7 @@ ls $directory_path
 ---
 ### sample .json objects
 ```json
-{
+Student = {
    "name":"Thuan"
    "age": 23
    "course":"CSP451"
@@ -43,7 +43,7 @@ ls $directory_path
 }
 ```
 ```json
-{
+Food = {
    "Fruit":"Orange"
    "Vegetable":"Cabbage"
 }
