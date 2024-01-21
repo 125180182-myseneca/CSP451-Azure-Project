@@ -56,6 +56,28 @@ ls $directory_path
 | With     | Random | Information | For    | My     |
 | Course   | CSP451 | In          | The    | Winter |
 | Semester |        |             |        |        |
+---
+### Collaboration in GitHub - Suggestions
+
+```
+@AtoosaNasiri-Seneca
+These are my suggestions:
+
+The checkpoint was overall straightforward, but I think some of the instructions could be reworded better. One of the issues I had trouble understanding was the JSON step, but this was covered in class.
+
+Another thing I would like to point out is that the submission instructions is rather redundant and could be heavily reduced.
+
+Personal Details:
+
+Course Information: CSP451NIA
+Student Name: Thuan Le
+Seneca Email: tle53@myseneca.ca
+```
+
+Link to comment: https://github.com/orgs/Azure-Project-Winter2024/discussions/19#discussioncomment-8194487
+
+![Image](2.png)
+
 
 ---
 ### Sample hyperlink
