@@ -16,7 +16,7 @@ ___
 3. [Multi line code snippet](#Multi-line-code-snippet)
 4. [Sample .json objects](#sample-.json-objects)
 5. [Sample Table](#sample-table)
-6. [Sample Hyperlink](#sample-hyperlink)
+6. [Links](#useful-links) 
 ---
 ### An Image
 ![Image](1.png)
@@ -80,7 +80,9 @@ Link to comment: https://github.com/orgs/Azure-Project-Winter2024/discussions/19
 
 
 ---
-### Sample hyperlink
-<p> This is a sample <a href="https://github.com/125180182-myseneca/CSP451-Azure-Project">hyperlink</a> </p>
+### Useful Links
+1. <p>Class GitHub Organization: <a href="https://github.com/Azure-Project-Winter2024">Organization</a></p>
+2. <p>Class GitHub Repository: <a href="https://github.com/orgs/Azure-Project-Winter2024/repositories">Repository</a></p>
+3. <p>Class GitHub Discussions: <a href="https://github.com/orgs/Azure-Project-Winter2024/discussions">Discussions</a></p>
 
 
