@@ -9,16 +9,18 @@
 ----
 ### Table of Contents
 1. [Part A - Adding Files - Local Repo Workflow](#Part-A)
-2. [Part B - Inspecting Local Repo with `git status` and `git log`](#header2)
-3. [Part C - Creating & Merging Branches](#header3)
-4. [Part D - Git Branching Strategy Review Question](#header4)
+2. [Part B - Inspecting Local Repo with `git status` and `git log`](#Part-B)
+3. [Part C - Creating & Merging Branches](#Part-C)
+4. [Part D - Git Branching Strategy Review Question](#Part-D)
 ----
 
 ### Part A
-[git_status_untracked.txt](Checkpoint2/git_status_untracked.txt)
-[git_status_uncommitted.txt](Checkpoint2/git_status_uncommitted.txt)
-[git_status_committed.txt](Checkpoint2/git_status_committed.txt)
+[git_status_untracked.txt](git_status_untracked.txt)
+[git_status_uncommitted.txt](git_status_uncommitted.txt)
+[git_status_committed.txt](git_status_committed.txt)
 
+![gitstatus](gitstatus.png)
+![gitlog](gitlog-n5.png)
 ### Part B
 
 
