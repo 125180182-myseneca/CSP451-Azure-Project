@@ -35,3 +35,6 @@
 "Git Log" on the other hand gives you an output of what commits has been done on the repository. For example where you are dealing with a project, you can use the "Git Log" command to check the commit history of that project. This allows you to see the changes and when it was made which you or the collaborator(s) have made on the project. </p>
 
 ### Part C
+
+![BranchPush](branchpush.png)
+![Branches](branches.png)
