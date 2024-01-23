@@ -7,6 +7,27 @@
 - **TEACHER’S NAME: Atoosa Nasiri
 
 ----
+### Table of Contents
+1. [Part A - Adding Files - Local Repo Workflow](#Part-A)
+2. [Part B - Inspecting Local Repo with `git status` and `git log`](#header2)
+3. [Part C - Creating & Merging Branches](#header3)
+4. [Part D - Git Branching Strategy Review Question](#header4)
+----
+
+### Part A
+[git_status_untracked.txt](Checkpoint2/git_status_untracked.txt)
+[git_status_uncommitted.txt](Checkpoint2/git_status_uncommitted.txt)
+[git_status_committed.txt](Checkpoint2/git_status_committed.txt)
+
+### Part B
+
+
+
+
+### Part C
+
+### Part D
+
 
 ### Questions
 1. What are the differences between develop branch and main branch?
