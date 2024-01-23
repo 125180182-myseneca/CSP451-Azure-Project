@@ -18,22 +18,57 @@
 
 #### Untracked
 [git_status_untracked.txt](git_status_untracked.txt)
+```bash
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Checkpoint2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
 ![git-untracked](images/untracked.png)
 
 #### Uncommitted
 [git_status_uncommitted.txt](git_status_uncommitted.txt)
+```bash
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Checkpoint2/README.md
+	new file:   Checkpoint2/git_status_untracked.txt
+	new file:   Checkpoint2/untracked.png
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Checkpoint2/committed.png
+	Checkpoint2/git_status_uncommitted.txt
+```
 ![git-committed](images/uncommitted.png)
 
 #### Committed
 [git_status_committed.txt](git_status_committed.txt)
+```bash
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_status_committed.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
 ![git-uncommitted](images/committed.png)
 
 
 #### Git log -n 5
-[git_log_output_txt](git_log_output.txt)
 ![git-log-n-5](images/git-log-n-5.png)
 
-----
+--------
 
 ### Part B
 
@@ -46,7 +81,38 @@
 ![BranchPush](images/branchpush.png)
 ![Branches](images/branches.png)
 
-[git_status_committed.txt](git_log_output.txt)
+[git_log_output.txt](git_log_output.txt)
+```bash
+commit 15fcf874ccb482b5510c1c9cc5401c6f2704e908
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:47:36 2024 -0500
+
+    Added images
+
+commit 21657171226f5ef232d5e6b81b743df12d23ff56
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:28:50 2024 -0500
+
+    adds emojis to feat-emojis branch
+
+commit bf3a7f33aaf20ba7c6f2e94bf4991e1e6bc4099f
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:26:15 2024 -0500
+
+    adds footnotes folder
+
+commit 47a702843b9ce54adcbd1d388df7d674db46cf04
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:22:12 2024 -0500
+
+    Added Tables of Contents and Part A
+
+commit aca2c561b80fb76d611133ec4d231edbef51233c
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:15:32 2024 -0500
+
+    added git_status_committed.txt and img
+```
 ![Gitlog-n5](images/gitlog-n.png)
 
 ### Part D
@@ -71,5 +137,5 @@
      
 3. What are the best practices in working with release branches?
 
-The best practices in working with release branches is that it should always be publicly available to other collaborators, must be branched from develop, restricted to only merge into master and develop, and it requires a naming convention that follows semantic versioning.
+    <p>The best practices in working with release branches is that it should always be publicly available to other collaborators, must be branched from develop, restricted to only merge into master and develop, and it requires a naming convention that follows semantic versioning.</p>
 
