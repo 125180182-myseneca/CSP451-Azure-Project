@@ -17,15 +17,15 @@
 ### Part A
 
 [git_status_untracked.txt](git_status_untracked.txt)
-![git-untracked](untracked.png)
+![git-untracked](images/untracked.png)
 
 [git_status_uncommitted.txt](git_status_uncommitted.txt)
-![git-committed](gituncommitted.png)
+![git-committed](images/gituncommitted.png)
 
 [git_status_committed.txt](git_status_committed.txt)
-![git-uncommitted](committed.png)
+![git-uncommitted](images/committed.png)
 
-![git-log-n-5](git-log-n-5.png)
+![git-log-n-5](images/git-log-n-5.png)
 ----
 
 ### Part B
@@ -36,11 +36,11 @@
 
 ### Part C
 
-![BranchPush](branchpush.png)
-![Branches](branches.png)
+![BranchPush](images/branchpush.png)
+![Branches](images/branches.png)
 
 [git_status_committed.txt](git_log_output.txt)
-![Gitlog-n5](gitlog-n.png)
+![Gitlog-n5](images/gitlog-n.png)
 
 ### Part D
 
