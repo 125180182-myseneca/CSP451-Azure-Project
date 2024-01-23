@@ -30,8 +30,9 @@
 
 
 #### Git log -n 5
-![git-log-n-5](images/git-log-n-5.png)
 [git_log_output_txt](git_log_output.txt)
+![git-log-n-5](images/git-log-n-5.png)
+
 ----
 
 ### Part B
