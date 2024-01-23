@@ -16,15 +16,20 @@
 
 ### Part A
 
+#### Untracked
 [git_status_untracked.txt](git_status_untracked.txt)
 ![git-untracked](images/untracked.png)
 
+#### Uncommitted
 [git_status_uncommitted.txt](git_status_uncommitted.txt)
-![git-committed](images/gituncommitted.png)
+![git-committed](images/uncommitted.png)
 
+#### Committed
 [git_status_committed.txt](git_status_committed.txt)
 ![git-uncommitted](images/committed.png)
 
+
+#### Git log -n 5
 ![git-log-n-5](images/git-log-n-5.png)
 ----
 
