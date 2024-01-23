@@ -1,0 +1,29 @@
+commit 15fcf874ccb482b5510c1c9cc5401c6f2704e908
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:47:36 2024 -0500
+
+    Added images
+
+commit 21657171226f5ef232d5e6b81b743df12d23ff56
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:28:50 2024 -0500
+
+    adds emojis to feat-emojis branch
+
+commit bf3a7f33aaf20ba7c6f2e94bf4991e1e6bc4099f
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:26:15 2024 -0500
+
+    adds footnotes folder
+
+commit 47a702843b9ce54adcbd1d388df7d674db46cf04
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:22:12 2024 -0500
+
+    Added Tables of Contents and Part A
+
+commit aca2c561b80fb76d611133ec4d231edbef51233c
+Author: Thuan Le <tle53@myseneca.ca>
+Date:   Tue Jan 23 14:15:32 2024 -0500
+
+    added git_status_committed.txt and img
