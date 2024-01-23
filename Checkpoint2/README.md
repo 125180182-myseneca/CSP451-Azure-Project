@@ -21,7 +21,6 @@
 [git_status_committed.txt](git_status_committed.txt)
 
 ![gitstatus](gitstatus.png)
-![gitlog](gitlog-n5.png)
 
 ### Part B
 
