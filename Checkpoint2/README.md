@@ -1,0 +1,7 @@
+### Checkpoint2 Submission
+
+- **COURSE INFORMATION: CSP451NIA
+- **STUDENT’S NAME: Thuan Le
+- **STUDENT'S NUMBER: 125180182
+- **GITHUB USER ID: 125180182-myseneca
+- **TEACHER’S NAME: Atoosa Nasiri
