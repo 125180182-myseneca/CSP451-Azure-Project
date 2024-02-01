@@ -1,10 +1,10 @@
 # Checkpoint3 Submission
 
-- **COURSE INFORMATION: CSP451
-- **STUDENT’S NAME: Thuan Le
-- **STUDENT'S NUMBER: 125180182
-- **GITHUB USER ID: 125180182-myseneca
-- **TEACHER’S NAME: Atoosa Nasiri
+- **COURSE INFORMATION: CSP451**
+- **STUDENT’S NAME: Thuan Le**
+- **STUDENT'S NUMBER: 125180182**
+- **GITHUB USER ID: 125180182-myseneca**
+- **TEACHER’S NAME: Atoosa Nasiri**
 
 ---
 
@@ -16,8 +16,8 @@
 
 ---
 
-### Part A - Manage Conflicts - Overwrite Remote Changes: 
-Follow the instructions and submit all files, and embed logs when asked in your READMe.md. 
+### **Part A - Manage Conflicts - Overwrite Remote Changes:**
+*Follow the instructions and submit all files, and embed logs when asked in your READMe.md.* 
 1. What is the color of the text after you forcefully overwrite remote with local changes?
     <p> The color of the text after forcefully overwriting remote with local changes is green. </p>
 
@@ -52,8 +52,8 @@ updating local tracking ref 'refs/remotes/origin/main'
 
 ---
 
-### Part B - Manage Conflicts - Reset Local Commit Head: 
-Follow the instructions and submit all files, and embed logs when asked in your READMe.md. 
+### **Part B - Manage Conflicts - Reset Local Commit Head:** 
+*Follow the instructions and submit all files, and embed logs when asked in your READMe.md.*
 1. What is the color of the text after you forcefully overwrite remote with local changes?
     <p> The color of the text after resetting the local commit head is maroon.</p>
 
@@ -108,14 +108,14 @@ Fast-forward
 
 ---
 
-### Part C - Manage Conflicts - Merge Editor: 
-Follow the instructions and submit all files, and add screenshots asked in your READMe.md.
+### **Part C - Manage Conflicts - Merge Editor:** 
+*Follow the instructions and submit all files, and add screenshots asked in your READMe.md.*
 
 ![PartC](./logs/PartC.png)
 
 ---
 
-### Part D - Collaboration - Creating Pull Request: 
-Follow the instructions and submit all files, and add screenshots asked in your READMe.md.
+### **Part D - Collaboration - Creating Pull Request:** 
+*Follow the instructions and submit all files, and add screenshots asked in your READMe.md.*
 
 ![PartD](./logs/PartD.png)
