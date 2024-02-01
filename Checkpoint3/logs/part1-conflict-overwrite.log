@@ -1,0 +1,5 @@
+POST git-receive-pack (710 bytes)
+Pushing to https://github.com/125180182-myseneca/CSP451-Azure-Project.git
+To https://github.com/125180182-myseneca/CSP451-Azure-Project.git
+ + ed03126...de58f7d main -> main (forced update)
+updating local tracking ref 'refs/remotes/origin/main'
