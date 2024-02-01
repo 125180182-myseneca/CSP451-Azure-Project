@@ -9,10 +9,10 @@
 ---
 
 ### Table of Contents
-1. [Part A - Manage Conflicts - Overwrite Remote Changes](#header1)
-2. [Part B - Manage Conflicts - Reset Local Commit Head](#header2)
-3. [Part C - Manage Conflicts - Merge Editor](#header3)
-4. [Part D - Collaboration - Creating Pull Request](#header4)
+1. [Part A - Manage Conflicts - Overwrite Remote Changes](#part-a---manage-conflicts---overwrite-remote-changes)
+2. [Part B - Manage Conflicts - Reset Local Commit Head](#part-b---manage-conflicts---reset-local-commit-head)
+3. [Part C - Manage Conflicts - Merge Editor](#part-c---manage-conflicts---merge-editor)
+4. [Part D - Collaboration - Creating Pull Request](#part-d---collaboration---creating-pull-request)
 
 ---
 
@@ -20,6 +20,11 @@
 Follow the instructions and submit all files, and embed logs when asked in your READMe.md. 
 1. What is the color of the text after you forcefully overwrite remote with local changes?
     <p> The color of the text after forcefully overwriting remote with local changes is green. </p>
+
+<details>
+
+<summary>Part A: Logs</summary>
+
 
 [part1-conflict-error.log](./logs/part1-conflict-error.log)
 
@@ -43,12 +48,17 @@ To https://github.com/125180182-myseneca/CSP451-Azure-Project.git
  + ed03126...de58f7d main -> main (forced update)
 updating local tracking ref 'refs/remotes/origin/main'
 ```
+</details>
+
 ---
 
 ### Part B - Manage Conflicts - Reset Local Commit Head: 
 Follow the instructions and submit all files, and embed logs when asked in your READMe.md. 
 1. What is the color of the text after you forcefully overwrite remote with local changes?
     <p> The color of the text after resetting the local commit head is maroon.</p>
+
+<details>
+<summary>Part B: Logs</summary>
 
 [part2-conflict-error.log](./logs/part2-conflict-error.log)
 ```
@@ -94,6 +104,7 @@ Fast-forward
  Checkpoint3/conflict-resolution/index.html | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
  ```
+</details>
 
 ---
 
