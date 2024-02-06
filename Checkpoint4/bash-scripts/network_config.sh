@@ -7,7 +7,7 @@ source  ./logos.sh
 # Update the lines that are specific to your network 
 # /////////////////////////////////////////////////////////////
 
-RG_NAME="Student-RG-1202818"     # your student group
+RG_NAME="Student-RG-1202818"     # your student group 
 LOCATION="Canada Central"    # your location
 ID="27"          #unique ID assigned to you
 
