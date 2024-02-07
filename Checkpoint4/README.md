@@ -47,6 +47,8 @@ Part A Questions:
     
     `az network vnet subnet create -n "SN1" -g "Student-RG-1202818" --vnet-name "Router-27" --address-prefixes 172.17.27.32/27"`
 
+---
+
 Part B: Working with Azure CLI Bash
 
 1. az network vnet list --output json > vnet_list.json
@@ -98,3 +100,40 @@ Part B: Working with Azure CLI Bash
     az network route-table route show --resource-group Student-RG-1202818 -n Route-to-Server --route-table-name RT-27 --output json >> route_details.json
 
 7. az network vnet subnet show -g Student-RG-1202818 -n SN1 --vnet-name Server-27
+
+---
+
+Part C: Network Review Questions
+
+1. What is Azure Virtual Network (VNET)? Elaborate in your own words, you may use diagrams if drawn by yourself.
+
+    An Azure Virtual Network is similar to a network at home, but instead, the network environment is in the cloud. This allows the consumer to create Azure Resources within the particular network.
+    
+2. In the context of Hybrid Cloud architecture. How on-prem computers can access resources inside Azure virtual network?
+
+    There are many ways, but the easiest and less difficult method is to implement a virtual private gateway on the Azure virtual network.
+    
+3. What are the most important benefits of Azure Virtual Networks? Elaborate in your own words. Do not copy/paste from Azure Documentation. Itemized list of just benefit without proper elaboration will not receive any marks
+
+    One of the most important benefits of Azure Virtual Networks is that it gives you flexibilty on which availibility zone and regions you want to deploy your Network. Another great benefit is that you are able to deploy Azure Resources which can be accessed anywhere as long as you have internet. Lastly, you are also able to separate your Azure Resources in separate Azure Virtual Networks and still have them be able to communicate with each other.
+    
+4. What is the difference between Network Security Group (NSG) and Route-Tables?
+
+    The difference between a NSG and Route-Tables 
+    
+5. What is the difference between NSG and Firewalls?
+
+    NSG and Firewall are similar in the way of applying rules based filtering of traffic through IP addresses, Port Numbers, and Networks etc, but the difference between a NSG and Firewall is that NSG's are applied to interfaces or subnets of resources in a virtual network. While a Firewall is much more advanced and applied on a global level.
+    
+6. What is a hob-and-spoc network topology and how be deployed in Azure Cloud?
+
+    A hub and spoke network topology consists of a hub and as many spokes as necessary. In the cloud, the hub is a centralized virtual network which contains common resources that spokes all share. It also controls and inspects traffic between spokes and the internet. In order to deploy it in Azure Cloud, you would need Virtual Networks. One of the Virtual networks can be a Hub which is peered to all the other Virtual Networks(Spokes).
+    
+7. In working with Azure VNETs, do you need to to define gateways for Azure to route traffic between subnets?
+
+    You do not need to define gateways for Azure to route traffic between subnets. Azure creates routes for each subnet which allow them to communicate with each other. In addition to this, you can also always create a user defined route.
+    
+8. When do you need to configure and use Virtual Network Gateways?
+    
+    You only need to configure and use Virtual Network Gateways when you wish to communicate with a virtual network from an on premises or client.
+
