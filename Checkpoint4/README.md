@@ -38,35 +38,34 @@ Client_Subnet_address="10.28.178.0/24"
 
 1. **In network_config_test.sh what does if [[ ! $(az group list -o tsv --query "[?name=='$RG_NAME']") ]] do? Explain your answer.**
     
-    <p>To summarize, all this statement does is it checks whether if the Resource Group exists.
+    ><p>To summarize, all this statement does is it checks whether if the Resource Group exists.</p>
     
-    For the expression in the square brackets, it lists the resource groups, outputting to tsv output format, and then queries the output for resource groups that equal to the variable RG_NAME.
-    The if statement only runs if there is no resource groups that are equal to the variable RG_NAME because of the ! symbol. </p>
+    ><p>For the expression in the square brackets, it lists the resource groups, outputting to tsv output format, and then queries the output for resource groups that equal to the variable RG_NAME. The if statement only runs if there is no resource groups that are equal to the variable RG_NAME because of the ! symbol. </p>
 
 2. **Why is it crucial to check if a resource exist before creating it? What bash syntax do you use to test this? How do you check if a vnet exists in vnet_create.sh?**
 
-    <p>It is crucial to check whether a resource exists before creating it. One of the reasons is because creating new resources can take a significant amount of time. For example, Azure Bastion takes about 10 minutes to deploy. The bash syntax you can use to test this is through a if statement with an expression. You can check whether if a vnet exists in vnet_create.sh by the following statement:</p> 
+    ><p>It is crucial to check whether a resource exists before creating it. One of the reasons is because creating new resources can take a significant amount of time. For example, Azure Bastion takes about 10 minutes to deploy. The bash syntax you can use to test this is through a if statement with an expression. You can check whether if a vnet exists in vnet_create.sh by the following statement:</p> 
     
     `if [[ $(az network vnet list -g $RG_NAME -o tsv --query "[?name=='$vnet']") ]]`
     
 3. **What is the Azure CLI command to create vnet? Give the specific command as per your environment and unique ID configuration. What are the required and what are the optional parameters that you need to pass to it?**
 
-    <p>The Azure CLI command to create a vnet is:
+    ><p>The Azure CLI command to create a vnet is:</p>
     
     `"az network vnet create -n "VnetName". -g "resourceGroup"`. 
     
-    The required parameters are vnet name and resource group. The optional parameters are address-prefixes and --subnet-name. In the context of my environment, my example CLI command would be:</p>
+    ><p>The required parameters are vnet name and resource group. The optional parameters are address-prefixes and --subnet-name. In the context of my environment, my example CLI command would be:</p>
     
     `az network vnet create -n "Router-27" -g "Student-RG-1202818" --address-prefixes "172.17.27.0/24" --subnet-name "SN1" --subnet-prefixes "172.17.27.32/27"`
 
     
 4. **What is the Azure CLI command to create subnet? Give the specific command as per your environment and unique ID configuration. What are the required and what are the optional parameters that you need to pass to it?**
 
-    <p>The Azure CLI command to create a subnet is: 
+    <p>The Azure CLI command to create a subnet is:</p>
 
     `az network vnet subnet create -n "name" -g "resourceGroup" --vnet-name "vnetName"`
 
-    The required parameters are subnet name, resource group and vnet name. The optional parameters is address-prefixes. In the context of my environment, my example CLI command would be: 
+    ><p>The required parameters are subnet name, resource group and vnet name. The optional parameters is address-prefixes. In the context of my environment, my example CLI command would be:</p> 
     
     `az network vnet subnet create -n "SN1" -g "Student-RG-1202818" --vnet-name "Router-27" --address-prefixes 172.17.27.32/27"`</p>
 </details>
@@ -217,35 +216,35 @@ Client_Subnet_address="10.28.178.0/24"
 
 1. **What is Azure Virtual Network (VNET)? Elaborate in your own words, you may use diagrams if drawn by yourself.**
 
-    <p>An Azure Virtual Network is similar to a network at home, but instead, the network environment is in the cloud. This allows the consumer to create Azure Resources within the particular network.</p>
+    ><p>An Azure Virtual Network is similar to a network at home, but instead, the network environment is in the cloud. This allows the consumer to create Azure Resources within the particular network.</p>
     
 2. **In the context of Hybrid Cloud architecture. How on-prem computers can access resources inside Azure virtual network?**
 
-    <p>There are many ways, but the easiest and less difficult method is to implement a virtual private gateway on the Azure virtual network.</p>
+    ><p>There are many ways, but the easiest and less difficult method is to implement a virtual private gateway on the Azure virtual network.</p>
     
 3. **What are the most important benefits of Azure Virtual Networks? Elaborate in your own words. Do not copy/paste from Azure Documentation. Itemized list of just benefit without proper elaboration will not receive any marks**
 
-    <p>One of the most important benefits of Azure Virtual Networks is that it gives you flexibilty on which availibility zone and regions you want to deploy your Network. Another great benefit is that you are able to deploy Azure Resources which can be accessed anywhere as long as you have internet. Lastly, you are also able to separate your Azure Resources in separate Azure Virtual Networks and still have them be able to communicate with each other.</p>
+    ><p>One of the most important benefits of Azure Virtual Networks is that it gives you flexibilty on which availibility zone and regions you want to deploy your Network. Another great benefit is that you are able to deploy Azure Resources which can be accessed anywhere as long as you have internet. Lastly, you are also able to separate your Azure Resources in separate Azure Virtual Networks and still have them be able to communicate with each other.</p>
     
 4. **What is the difference between Network Security Group (NSG) and Route-Tables?**
 
-    <p>The difference between a NSG and a Route-Table is that an NSG is used to filter traffic, while a Route-Table is used to add and control the routes between resources.</p>
+    ><p>The difference between a NSG and a Route-Table is that an NSG is used to filter traffic, while a Route-Table is used to add and control the routes between resources.</p>
     
 5. **What is the difference between NSG and Firewalls?**
 
-    <p>NSG and Firewall are similar in the way of applying rules based filtering of traffic through IP addresses, Port Numbers, and Networks etc, but the difference between a NSG and Firewall is that NSG's are applied to interfaces or subnets of resources in a virtual network. While a Firewall is much more advanced and applied on a global level.</p>
+    ><p>NSG and Firewall are similar in the way of applying rules based filtering of traffic through IP addresses, Port Numbers, and Networks etc, but the difference between a NSG and Firewall is that NSG's are applied to interfaces or subnets of resources in a virtual network. While a Firewall is much more advanced and applied on a global level.</p>
     
 6. **What is a hob-and-spoc network topology and how be deployed in Azure Cloud?**
 
-    <p>A hub and spoke network topology consists of a hub and as many spokes as necessary. In the cloud, the hub is a centralized virtual network which contains common resources that spokes all share. It also controls and inspects traffic between spokes and the internet. In order to deploy it in Azure Cloud, you would need Virtual Networks. One of the Virtual networks can be a Hub which is peered to all the other Virtual Networks(Spokes).</p>
+    ><p>A hub and spoke network topology consists of a hub and as many spokes as necessary. In the cloud, the hub is a centralized virtual network which contains common resources that spokes all share. It also controls and inspects traffic between spokes and the internet. In order to deploy it in Azure Cloud, you would need Virtual Networks. One of the Virtual networks can be a Hub which is peered to all the other Virtual Networks(Spokes).</p>
     
 7. **In working with Azure VNETs, do you need to to define gateways for Azure to route traffic between subnets?**
 
-    <p>You do not need to define gateways for Azure to route traffic between subnets. Azure creates routes for each subnet which allow them to communicate with each other. In addition to this, you can also always create a user defined route.</p>
+    ><p>You do not need to define gateways for Azure to route traffic between subnets. Azure creates routes for each subnet which allow them to communicate with each other. In addition to this, you can also always create a user defined route.</p>
     
 8. **When do you need to configure and use Virtual Network Gateways?**
     
-    <p>You only need to configure and use Virtual Network Gateways when you wish to communicate with a virtual network from an on premises or client.</p>
+    ><p>You only need to configure and use Virtual Network Gateways when you wish to communicate with a virtual network from an on premises or client.</p>
 </details>
 
 ---
@@ -254,14 +253,14 @@ Client_Subnet_address="10.28.178.0/24"
 
 1. **List all VMs and send the output in table format to vm_list.tbl file. What command did you use?**
 
-    The command used was: 
+    ><p>The command used was:</p>
     `az vm list --output table > vm_list.tbl`
     
     [vm_list.json](../Checkpoint4/files/vm_list.json)
 
 2. **Get the details of your WC-99 using az show command and send the output in json format to WC-99-details.json file. What command did you use?**
 
-    The command used was: 
+    ><p>The command used was:</p>
     `az vm show --name WC-27 -g Student-RG-1202818 --output json > WC-99-details.json`
 
     [WC-99-details.json](../Checkpoint4/files/WC-99-details.json)
@@ -402,7 +401,7 @@ Client_Subnet_address="10.28.178.0/24"
     
 3. **List all NSG using az list command and send the output in table format to nsg_list.tblfile. What command did you use?**
     
-    The command used was:
+    ><p>The command used was:</p>
     `az network nsg list --output table > nsg_list.tbl`
 
     [nsg_list.tbl](../Checkpoint4/files/nsg_list.tbl)
@@ -418,23 +417,23 @@ canadacentral  WS-NSG-27  Succeeded            Student-RG-1202818  ac185ccf-9bbb
 
 4. **Provide screenshot of auto shutdown configuration for LS_XX. Is there any command to show this? What is the time-zone? What should be the correct time settings considering the time zone differences?**
 
-    <p>I couldn't find any Azure CLI command to show the auto shutdown configuration of a VM. The time-zone is Coordinated Universal Time. The correct time settings should be 12:00 a.m EST.</p>
+    ><p>I couldn't find any Azure CLI command to show the auto shutdown configuration of a VM. The time-zone is Coordinated Universal Time. The correct time settings should be 12:00 a.m EST.</p>
 
     ![autoshutdown.png](../Checkpoint4/files/autoshutdown.png)
 
 5. **Why auto shutdown configuration is not done in vm_create code? Why is it a separate scripts? Is it possible to configure auto shutdown at the same time you are creating the VM?**
 
-    <p>Auto shutdown configuration is not done in vm_create code and they are separate scripts because it is not possible to configure auto shutdown at the same time you are creating the VM. The VM needs to be created before you can configure auto shutdown on the VMs.</p>
+    ><p>Auto shutdown configuration is not done in vm_create code and they are separate scripts because it is not possible to configure auto shutdown at the same time you are creating the VM. The VM needs to be created before you can configure auto shutdown on the VMs.</p>
 
 ### Part E: Creating Custom Images from VMs using Azure CLI
 
 1. **What are the difference between the script that creates VM from Azure Generic Image vs Custom Image? A good place to start is to compare the two scripts custom_vm_create.sh and custom_vm_create.sh and check the parameters passed to az vm create command. Elaborate the differences you observe.**
 
-    <p>The major difference between the two scripts is that the script for Azure Generic Image requires 2 separate functions for the Operating Systems, while the Custom Image script only requires 1 function.</p>
+    ><p>The major difference between the two scripts is that the script for Azure Generic Image requires 2 separate functions for the Operating Systems, while the Custom Image script only requires 1 function.</p>
 
 2. **If you run custom_vm_create.sh without custom image version number, the script will throw an error and show you the usage suggestion. What is the usage suggestion?**
 
-    The usage suggestion is:
+    ><p>The usage suggestion is:</p>
 
     ```
     target_version parameter not provided
@@ -443,7 +442,7 @@ canadacentral  WS-NSG-27  Succeeded            Student-RG-1202818  ac185ccf-9bbb
     
 3. **The script is purposefully written such that it waits on each custom image creation to be completed before proceeding to next image. Can you update the script such that custom images creation runs in background, i.e. how can you parallelize the process?Hint: only provide the single line command that you need to update**
 
-<p>The only thing we need to do is add the & sign at the end of the command to parallelize the process.</p>
+><p>The only thing we need to do is add the & sign at the end of the command to parallelize the process.</p>
 
     `
     az image create --name $image_name \
@@ -519,21 +518,21 @@ V1                  canadacentral  ws-27-ver-27  Succeeded            Student-RG
 
 1. **After deleting list all your VMs using az  vm list ... with the output in table format. What command did you use? How can you ensure all your VMs are deleted?**
 
-    <p>The command I used was: `az vm list --output table`
+    ><p>The command I used was: `az vm list --output table`</p>
 
-    You can ensure all the VMs are deleted if it returns nothing in the output of the command. You can also check on the Azure Portal and search virtual machines.</p>
+    ><p>You can ensure all the VMs are deleted if it returns nothing in the output of the command. You can also check on the Azure Portal and search virtual machines.</p>
 
 2. **Why you are not asked to delete Custom Images? What is the difference between VM and Custom Image that makes VM a very costly resource and Custom Images, negligible? (Hint: It is related to OS Disk)**
 
-    <p>We are not asked to delete Custom Images as we can use our Images to create our VM's for the next checkpoint. The difference between VM and Custom image is that the VM contains a provisioned OS disk, while a custom image is used to create new disks. This means that the VM requires more storage which means more cost. A custom image is also not active, meaning it doesn't turn on or off like a VM.</p>
+    ><p>We are not asked to delete Custom Images as we can use our Images to create our VM's for the next checkpoint. The difference between VM and Custom image is that the VM contains a provisioned OS disk, while a custom image is used to create new disks. This means that the VM requires more storage which means more cost. A custom image is also not active, meaning it doesn't turn on or off like a VM.</p>
 
 3. **What are cost implications of NSG or NIC? Why are you deleting them?**
     
-    <p>NSG and NIC can cost money. I am deleting it just in case as I do not want to go over budget. I've searched whether they cost money, but found nothing.</p>
+    ><p>NSG and NIC can cost money. I am deleting it just in case as I do not want to go over budget. I've searched whether they cost money, but found nothing.</p>
 
 4. **Why you are not deleting Network backend like VNET and Route-Tables?**
     
-    <p>We are not deleting the Network backend like VNET and Route-Tables because they form the backbone structure of the our network. It allows the resourses we created to communicate. In addition, VNET's and Route-Tables are free of charge in Azure.</p>
+    ><p>We are not deleting the Network backend like VNET and Route-Tables because they form the backbone structure of the our network. It allows the resourses we created to communicate. In addition, VNET's and Route-Tables are free of charge in Azure.</p>
 
 
 
