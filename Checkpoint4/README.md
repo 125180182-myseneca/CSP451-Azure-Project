@@ -212,6 +212,9 @@ Client_Subnet_address="10.28.178.0/24"
 
 ### Part C: Network Review Questions
 
+<details>
+    <summary> Part C Questions: </summary>
+
 1. **What is Azure Virtual Network (VNET)? Elaborate in your own words, you may use diagrams if drawn by yourself.**
 
     <p>An Azure Virtual Network is similar to a network at home, but instead, the network environment is in the cloud. This allows the consumer to create Azure Resources within the particular network.</p>
@@ -243,6 +246,7 @@ Client_Subnet_address="10.28.178.0/24"
 8. **When do you need to configure and use Virtual Network Gateways?**
     
     <p>You only need to configure and use Virtual Network Gateways when you wish to communicate with a virtual network from an on premises or client.</p>
+</details>
 
 ---
 
