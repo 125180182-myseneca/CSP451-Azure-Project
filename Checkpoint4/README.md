@@ -258,6 +258,19 @@ Client_Subnet_address="10.28.178.0/24"
     
     [vm_list.tbl](../Checkpoint4/files/vm_list.tbl)
 
+<details>
+    <summary>vm_list.tbl</summary>
+
+    ```
+    Name    ResourceGroup       Location       Zones
+------  ------------------  -------------  -------
+LR-27   STUDENT-RG-1202818  canadacentral
+LS-27   STUDENT-RG-1202818  canadacentral
+WC-27   STUDENT-RG-1202818  canadacentral
+WS-27   STUDENT-RG-1202818  canadacentral
+    ```
+</details>
+
 2. **Get the details of your WC-99 using az show command and send the output in json format to WC-99-details.json file. What command did you use?**
 
     ><p>The command used was:</p>
