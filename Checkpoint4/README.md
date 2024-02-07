@@ -31,31 +31,31 @@ Client_Subnet_address="10.28.178.0/24"
 ```
 ---
 Part A Questions:
-1. In network_config_test.sh what does if [[ ! $(az group list -o tsv --query "[?name=='$RG_NAME']") ]] do? Explain your answer.
+1. **In network_config_test.sh what does if [[ ! $(az group list -o tsv --query "[?name=='$RG_NAME']") ]] do? Explain your answer.**
     
-    To summarize, all this statement does is it checks whether if the Resource Group exists.
+    <p>To summarize, all this statement does is it checks whether if the Resource Group exists.
     
     For the expression in the square brackets, it lists the resource groups, outputting to tsv output format, and then queries the output for resource groups that equal to the variable RG_NAME.
-    The if statement only runs if there is no resource groups that are equal to the variable RG_NAME because of the ! symbol.
+    The if statement only runs if there is no resource groups that are equal to the variable RG_NAME because of the ! symbol. </p>
 
-2. Why is it crucial to check if a resource exist before creating it? What bash syntax do you use to test this? How do you check if a vnet exists in vnet_create.sh?
+2. **Why is it crucial to check if a resource exist before creating it? What bash syntax do you use to test this? How do you check if a vnet exists in vnet_create.sh?**
 
-    It is crucial to check whether a resource exists before creating it. One of the reasons is because creating new resources can take a significant amount of time. For example, Azure Bastion takes about 10 minutes to deploy. The bash syntax you can use to test this is through a if statement with an expression. You can check whether if a vnet exists in vnet_create.sh by the following statement: 
+    <p>It is crucial to check whether a resource exists before creating it. One of the reasons is because creating new resources can take a significant amount of time. For example, Azure Bastion takes about 10 minutes to deploy. The bash syntax you can use to test this is through a if statement with an expression. You can check whether if a vnet exists in vnet_create.sh by the following statement:</p> 
     
     `if [[ $(az network vnet list -g $RG_NAME -o tsv --query "[?name=='$vnet']") ]]`
     
-3. What is the Azure CLI command to create vnet? Give the specific command as per your environment and unique ID configuration. What are the required and what are the optional parameters that you need to pass to it?
+3. **What is the Azure CLI command to create vnet? Give the specific command as per your environment and unique ID configuration. What are the required and what are the optional parameters that you need to pass to it?**
 
-    The Azure CLI command to create a vnet is:
+    <p>The Azure CLI command to create a vnet is:
     
     `"az network vnet create -n "VnetName". -g "resourceGroup"`. 
     
-    The required parameters are vnet name and resource group. The optional parameters are address-prefixes and --subnet-name. In the context of my environment, my example CLI command would be: 
+    The required parameters are vnet name and resource group. The optional parameters are address-prefixes and --subnet-name. In the context of my environment, my example CLI command would be:</p>
     
     `az network vnet create -n "Router-27" -g "Student-RG-1202818" --address-prefixes "172.17.27.0/24" --subnet-name "SN1" --subnet-prefixes "172.17.27.32/27"`
 
     
-4. What is the Azure CLI command to create subnet? Give the specific command as per your environment and unique ID configuration. What are the required and what are the optional parameters that you need to pass to it?
+4. **What is the Azure CLI command to create subnet? Give the specific command as per your environment and unique ID configuration. What are the required and what are the optional parameters that you need to pass to it?**
 
     The Azure CLI command to create a subnet is: 
 
@@ -123,21 +123,21 @@ Part A Questions:
 
 ### Part C: Network Review Questions
 
-1. What is Azure Virtual Network (VNET)? Elaborate in your own words, you may use diagrams if drawn by yourself.
+1. **What is Azure Virtual Network (VNET)? Elaborate in your own words, you may use diagrams if drawn by yourself.**
 
     An Azure Virtual Network is similar to a network at home, but instead, the network environment is in the cloud. This allows the consumer to create Azure Resources within the particular network.
     
-2. In the context of Hybrid Cloud architecture. How on-prem computers can access resources inside Azure virtual network?
+2. **In the context of Hybrid Cloud architecture. How on-prem computers can access resources inside Azure virtual network?**
 
     There are many ways, but the easiest and less difficult method is to implement a virtual private gateway on the Azure virtual network.
     
-3. What are the most important benefits of Azure Virtual Networks? Elaborate in your own words. Do not copy/paste from Azure Documentation. Itemized list of just benefit without proper elaboration will not receive any marks
+3. **What are the most important benefits of Azure Virtual Networks? Elaborate in your own words. Do not copy/paste from Azure Documentation. Itemized list of just benefit without proper elaboration will not receive any marks**
 
     One of the most important benefits of Azure Virtual Networks is that it gives you flexibilty on which availibility zone and regions you want to deploy your Network. Another great benefit is that you are able to deploy Azure Resources which can be accessed anywhere as long as you have internet. Lastly, you are also able to separate your Azure Resources in separate Azure Virtual Networks and still have them be able to communicate with each other.
     
-4. What is the difference between Network Security Group (NSG) and Route-Tables?
+4. **What is the difference between Network Security Group (NSG) and Route-Tables?**
 
-    The difference between a NSG and Route-Tables 
+    The difference between a NSG and a Route-Table is that an NSG is used to filter traffic, while a Route-Table is used to add and control the routes between resources.
     
 5. What is the difference between NSG and Firewalls?
 

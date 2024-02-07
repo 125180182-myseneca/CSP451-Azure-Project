@@ -1,0 +1,126 @@
+{
+  "additionalCapabilities": null,
+  "applicationProfile": null,
+  "availabilitySet": null,
+  "billingProfile": null,
+  "capacityReservation": null,
+  "diagnosticsProfile": null,
+  "etag": null,
+  "evictionPolicy": null,
+  "extendedLocation": null,
+  "extensionsTimeBudget": null,
+  "hardwareProfile": {
+    "vmSize": "Standard_B2s",
+    "vmSizeProperties": null
+  },
+  "host": null,
+  "hostGroup": null,
+  "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1202818/providers/Microsoft.Compute/virtualMachines/WC-27",
+  "identity": null,
+  "instanceView": null,
+  "licenseType": null,
+  "location": "canadacentral",
+  "managedBy": null,
+  "name": "WC-27",
+  "networkProfile": {
+    "networkApiVersion": null,
+    "networkInterfaceConfigurations": null,
+    "networkInterfaces": [
+      {
+        "deleteOption": null,
+        "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1202818/providers/Microsoft.Network/networkInterfaces/wc-27",
+        "primary": true,
+        "resourceGroup": "Student-RG-1202818"
+      }
+    ]
+  },
+  "osProfile": {
+    "adminPassword": null,
+    "adminUsername": "tle53",
+    "allowExtensionOperations": true,
+    "computerName": "WC-27",
+    "customData": null,
+    "linuxConfiguration": null,
+    "requireGuestProvisionSignal": true,
+    "secrets": [],
+    "windowsConfiguration": {
+      "additionalUnattendContent": null,
+      "enableAutomaticUpdates": true,
+      "enableVmAgentPlatformUpdates": false,
+      "patchSettings": {
+        "assessmentMode": "ImageDefault",
+        "automaticByPlatformSettings": null,
+        "enableHotpatching": null,
+        "patchMode": "AutomaticByOS"
+      },
+      "provisionVmAgent": true,
+      "timeZone": null,
+      "winRm": null
+    }
+  },
+  "plan": null,
+  "platformFaultDomain": null,
+  "priority": null,
+  "provisioningState": "Succeeded",
+  "proximityPlacementGroup": null,
+  "resourceGroup": "Student-RG-1202818",
+  "resources": null,
+  "scheduledEventsProfile": null,
+  "securityProfile": {
+    "encryptionAtHost": null,
+    "encryptionIdentity": null,
+    "proxyAgentSettings": null,
+    "securityType": "TrustedLaunch",
+    "uefiSettings": {
+      "secureBootEnabled": true,
+      "vTpmEnabled": true
+    }
+  },
+  "storageProfile": {
+    "dataDisks": [],
+    "diskControllerType": "SCSI",
+    "imageReference": {
+      "communityGalleryImageId": null,
+      "exactVersion": "19044.3086.230621",
+      "id": null,
+      "offer": "Windows-10",
+      "publisher": "MicrosoftWindowsDesktop",
+      "sharedGalleryImageId": null,
+      "sku": "win10-21h2-pro-g2",
+      "version": "latest"
+    },
+    "osDisk": {
+      "caching": "ReadWrite",
+      "createOption": "FromImage",
+      "deleteOption": "Detach",
+      "diffDiskSettings": null,
+      "diskSizeGb": 127,
+      "encryptionSettings": null,
+      "image": null,
+      "managedDisk": {
+        "diskEncryptionSet": null,
+        "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1202818/providers/Microsoft.Compute/disks/WC-27_disk1_6ed372e1b3a841c89ad561e3904ec37c",
+        "resourceGroup": "Student-RG-1202818",
+        "securityProfile": null,
+        "storageAccountType": "StandardSSD_LRS"
+      },
+      "name": "WC-27_disk1_6ed372e1b3a841c89ad561e3904ec37c",
+      "osType": "Windows",
+      "vhd": null,
+      "writeAcceleratorEnabled": null
+    }
+  },
+  "tags": {
+    "DeploymentId": "1202818",
+    "LaunchId": "38011",
+    "LaunchType": "ON_DEMAND_LAB",
+    "TemplateId": "7633",
+    "TenantId": "353"
+  },
+  "timeCreated": "2024-02-07T08:00:37.407790+00:00",
+  "type": "Microsoft.Compute/virtualMachines",
+  "userData": null,
+  "virtualMachineScaleSet": null,
+  "vmId": "bd1f52fe-548d-4589-9054-f697c267fe1e",
+  "zones": null
+}

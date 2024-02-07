@@ -1,0 +1,6 @@
+Name    ResourceGroup       Location       Zones
+------  ------------------  -------------  -------
+LR-27   STUDENT-RG-1202818  canadacentral
+LS-27   STUDENT-RG-1202818  canadacentral
+WC-27   STUDENT-RG-1202818  canadacentral
+WS-27   STUDENT-RG-1202818  canadacentral

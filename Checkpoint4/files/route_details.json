@@ -1,0 +1,24 @@
+{
+  "addressPrefix": "10.28.178.0/24",
+  "etag": "W/\"10c8e919-dfbc-45dd-827e-aa844c280bbe\"",
+  "hasBgpOverride": false,
+  "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1202818/providers/Microsoft.Network/routeTables/RT-27/routes/Route-to-Desktop",
+  "name": "Route-to-Desktop",
+  "nextHopIpAddress": "192.168.27.36",
+  "nextHopType": "VirtualAppliance",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-1202818",
+  "type": "Microsoft.Network/routeTables/routes"
+}
+{
+  "addressPrefix": "172.17.27.32/27",
+  "etag": "W/\"10c8e919-dfbc-45dd-827e-aa844c280bbe\"",
+  "hasBgpOverride": false,
+  "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1202818/providers/Microsoft.Network/routeTables/RT-27/routes/Route-to-Server",
+  "name": "Route-to-Server",
+  "nextHopIpAddress": "192.168.27.36",
+  "nextHopType": "VirtualAppliance",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-1202818",
+  "type": "Microsoft.Network/routeTables/routes"
+}

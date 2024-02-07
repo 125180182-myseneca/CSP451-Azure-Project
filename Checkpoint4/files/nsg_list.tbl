@@ -1,0 +1,6 @@
+Location       Name       ProvisioningState    ResourceGroup       ResourceGuid
+-------------  ---------  -------------------  ------------------  ------------------------------------
+canadacentral  LR-NSG-27  Succeeded            Student-RG-1202818  d561eb22-b12d-49c2-b1c8-950500690b2d
+canadacentral  LS-NSG-27  Succeeded            Student-RG-1202818  232c7993-182e-4758-9b9b-45b000d12c7b
+canadacentral  WC-NSG-27  Succeeded            Student-RG-1202818  c4333afb-a414-4f21-9ea0-1aaea32a752e
+canadacentral  WS-NSG-27  Succeeded            Student-RG-1202818  ac185ccf-9bbb-4fc8-b5c8-097ec710fa7c
