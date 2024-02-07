@@ -252,6 +252,8 @@ Client_Subnet_address="10.28.178.0/24"
 
     The command used was: 
     `az vm list --output table > vm_list.tbl`
+    
+    [vm_list.json](../Checkpoint4/files/vm_list.json)
 
 2. **Get the details of your WC-99 using az show command and send the output in json format to WC-99-details.json file. What command did you use?**
 
