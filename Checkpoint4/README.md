@@ -1,4 +1,22 @@
-Part A: Creating Network Resources using Azure CLI
+# Checkpoint4 Submission
+
+- **COURSE INFORMATION: CSP451
+- **STUDENT’S NAME: Thuan Le
+- **STUDENT'S NUMBER: 125180182
+- **GITHUB USER ID: 125180182-myseneca
+- **TEACHER’S NAME: Atoosa Nasiri
+
+---
+
+1. [Part A - Creating Network Resources using Azure CLI](#part-a-creating-network-resources-using-azure-cli)
+2. [Part B - Working with Azure CLI Bash](#part-b-working-with-azure-cli-bash)
+3. [Part C - Network Review Questions](#part-c-network-review-questions)
+4. [Part D - Creating Virtual Machines](#part-d-creating-virtual-machines-using-azure-cli)
+5. [Part E - Creating Custom Images](#part-e-creating-custom-images-from-vms-using-azure-cli)
+6. [Part F - Clean Up your Environment](#part-f-clean-up-your-environment-using-azure-cli)
+
+---
+### Part A: Creating Network Resources using Azure CLI
 
 Modified network_config.sh
 ```
@@ -49,7 +67,7 @@ Part A Questions:
 
 ---
 
-Part B: Working with Azure CLI Bash
+### Part B: Working with Azure CLI Bash
 
 1. az network vnet list --output json > vnet_list.json
 2. az network vnet show -g Student-RG-1202818 -n Student-1202818-vnet --output json > student_vnet.json
@@ -103,7 +121,7 @@ Part B: Working with Azure CLI Bash
 
 ---
 
-Part C: Network Review Questions
+### Part C: Network Review Questions
 
 1. What is Azure Virtual Network (VNET)? Elaborate in your own words, you may use diagrams if drawn by yourself.
 
@@ -139,7 +157,7 @@ Part C: Network Review Questions
 
 ---
 
-Part D: Creating Virtual Machines using Azure CLI
+### Part D: Creating Virtual Machines using Azure CLI
 
 1. List all VMs and send the output in table format to vm_list.tbl file. What command did you use?
 
@@ -164,7 +182,7 @@ Part D: Creating Virtual Machines using Azure CLI
 
     Auto shutdown configuration is not done in vm_create code and they are separate scripts because it is not possible to configure auto shutdown at the same time you are creating the VM. The VM needs to be created before you can configure auto shutdown on the VMs.
 
-Part E: Creating Custom Images from VMs using Azure CLI
+### Part E: Creating Custom Images from VMs using Azure CLI
 
 1. What are the difference between the script that creates VM from Azure Generic Image vs Custom Image? A good place to start is to compare the two scripts custom_vm_create.sh and custom_vm_create.sh and check the parameters passed to az vm create command. Elaborate the differences you observe.
 
@@ -255,7 +273,7 @@ V2                  canadacentral  wc-27-ver-27  Succeeded            Student-RG
 V1                  canadacentral  ws-27-ver-27  Succeeded            Student-RG-1202818
 ```
 ---
-Part F: Clean Up your Environment using Azure CLI
+### Part F: Clean Up your Environment using Azure CLI
 
 1. After deleting list all your VMs using az  vm list ... with the output in table format. What command did you use? How can you ensure all your VMs are deleted?
 
