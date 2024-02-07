@@ -1,4 +1,4 @@
-Part A:
+Part A: Creating Network Resources using Azure CLI
 
 Modified network_config.sh
 ```
@@ -47,3 +47,54 @@ Part A Questions:
     
     `az network vnet subnet create -n "SN1" -g "Student-RG-1202818" --vnet-name "Router-27" --address-prefixes 172.17.27.32/27"`
 
+Part B: Working with Azure CLI Bash
+
+1. az network vnet list --output json > vnet_list.json
+2. az network vnet show -g Student-RG-1202818 -n Student-1202818-vnet --output json > student_vnet.json
+3. 
+    az network vnet peering list --resource-group "Student-RG-1202818" --vnet-name Router-27 --output table >> peerings.tbl
+
+    az network vnet peering list --resource-group "Student-RG-1202818" --vnet-name Server-27 --output table >> peerings.tbl
+
+    az network vnet peering list --resource-group "Student-RG-1202818" --vnet-name Student-1202818-vnet --output table >> peerings.tbl
+
+4. Note: Router-27, SN1 does not contain any route associations, therefore I will use Server-27
+
+    Server-27 SN1 Details:
+
+    `az network vnet subnet show -g Student-RG-1202818 -n SN1 --vnet-name Server-27`
+    ```
+    {
+    "addressPrefix": "172.17.27.32/27",
+    "delegations": [],
+    "etag": "W/\"c5ca55bf-3e33-4e57-b15f-d6011de8fbe3\"",
+    "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1202818/providers/Microsoft.Network/virtualNetworks/Server-27/subnets/SN1",
+    "name": "SN1",
+    "privateEndpointNetworkPolicies": "Disabled",
+    "privateLinkServiceNetworkPolicies": "Enabled",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "Student-RG-1202818",
+    "routeTable": {
+        "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1202818/providers/Microsoft.Network/routeTables/RT-27",
+        "resourceGroup": "Student-RG-1202818"
+    },
+    "type": "Microsoft.Network/virtualNetworks/subnets"
+    }
+
+    ```
+    Server-27 SN1 Routes:
+
+    `az network vnet subnet show -g Student-RG-1202818 -n SN1 --vnet-name Server-27 --query routeTable`
+    ```
+    {"id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1202818/providers/Microsoft.Network/routeTables/RT-27",
+    "resourceGroup": "Student-RG-1202818"
+    }
+    ```
+
+5. az network route-table route list --resource-group Student-RG-1202818 --route-table RT-27 --output table > route_list.tbl
+
+6. az network route-table route show --resource-group Student-RG-1202818 -n Route-to-Desktop --route-table-name RT-27 --output json >> route_details.json
+
+    az network route-table route show --resource-group Student-RG-1202818 -n Route-to-Server --route-table-name RT-27 --output json >> route_details.json
+
+7. az network vnet subnet show -g Student-RG-1202818 -n SN1 --vnet-name Server-27
