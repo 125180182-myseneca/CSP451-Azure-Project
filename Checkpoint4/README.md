@@ -256,7 +256,7 @@ Client_Subnet_address="10.28.178.0/24"
     ><p>The command used was:</p>
     `az vm list --output table > vm_list.tbl`
     
-    [vm_list.json](../Checkpoint4/files/vm_list.json)
+    [vm_list.tbl](../Checkpoint4/files/vm_list.tbl)
 
 2. **Get the details of your WC-99 using az show command and send the output in json format to WC-99-details.json file. What command did you use?**
 
@@ -518,7 +518,8 @@ V1                  canadacentral  ws-27-ver-27  Succeeded            Student-RG
 
 1. **After deleting list all your VMs using az  vm list ... with the output in table format. What command did you use? How can you ensure all your VMs are deleted?**
 
-    ><p>The command I used was: `az vm list --output table`</p>
+    ><p>The command I used was: </p>
+    `az vm list --output table`
 
     ><p>You can ensure all the VMs are deleted if it returns nothing in the output of the command. You can also check on the Azure Portal and search virtual machines.</p>
 
