@@ -1,0 +1,10 @@
+HyperVGeneration    Location       Name             ProvisioningState    ResourceGroup
+------------------  -------------  ---------------  -------------------  ------------------
+V2                  canadacentral  lr-27-ver-0.0.1  Succeeded            Student-RG-1202818
+V1                  canadacentral  lr-27-ver-2      Succeeded            Student-RG-1202818
+V2                  canadacentral  ls-27-ver-0.0.1  Succeeded            Student-RG-1202818
+V1                  canadacentral  ls-27-ver-2      Succeeded            Student-RG-1202818
+V2                  canadacentral  wc-27-ver-0.0.1  Succeeded            Student-RG-1202818
+V1                  canadacentral  wc-27-ver-2      Succeeded            Student-RG-1202818
+V2                  canadacentral  ws-27-ver-0.0.1  Succeeded            Student-RG-1202818
+V1                  canadacentral  ws-27-ver-2      Succeeded            Student-RG-1202818

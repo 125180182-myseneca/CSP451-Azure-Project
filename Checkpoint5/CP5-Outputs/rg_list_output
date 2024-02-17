@@ -1,0 +1,5 @@
+Name                Location       Status
+------------------  -------------  ---------
+Bastion_RG          canadacentral  Succeeded
+NetworkWatcherRG    canadacentral  Succeeded
+Student-RG-1202818  canadacentral  Succeeded
