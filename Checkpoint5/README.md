@@ -214,3 +214,16 @@ az vm list -g Student-RG-1202818 --output table > vm_list_output1
 
 3. Recreate all VMs from your images, and establish basic connectivity. How long the entire process took? How can you do this more efficiently?
 
+    This was a tedious process as you have to go to the individual images one by one in the portal, and still must configure the VM's. I think to do this more effectively, we could use ARM templates, or even create a script which will automatically use the images to create the VM's.
+
+ ### Part E - Azure Cost Analysis Charts
+
+ | No.|Scope              | Chart Type      | VIEW TYPE      | Date Range  | Group By     | Granularity | Example                                 |
+ |----|-------------------|-----------------|----------------|-------------|--------------|-------------|-----------------------------------------|
+ | 1  |Student-RG-1202818 |Column (Stacked) |DailyCosts      |Last 7 Days  |Resource      |Daily        |![image-1](/Checkpoint5/CP5_images/1.png)|
+ | 2  |Student-RG-1202818 |Column (Stacked) |DailyCosts      |Last 7 Days  |Service       |Daily        |![image-2](/Checkpoint5/CP5_images/2.png)|
+ | 3  |Student-RG-1202818 |Area             |AccumulatedCosts|Last 7 Days  |Resource      |Accumulated  |![image-3](/Checkpoint5/CP5_images/3.png)|
+ | 4  |Student-RG-1202818 |Pie Chart        |NA              |Last Month   |Service Name  |NA           |![image-4](/Checkpoint5/CP5_images/4.png)|
+ | 5  |Student-RG-1202818 |Pie Chart        |NA              |Last Month   |Service Family|NA           |![image-5](/Checkpoint5/CP5_images/5.png)|
+ | 6  |Student-RG-1202818 |Pie Chart        |NA              |Last Month   |Product       |NA           |![image-6](/Checkpoint5/CP5_images/6.png)|
+
