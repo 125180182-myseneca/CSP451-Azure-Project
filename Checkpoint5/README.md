@@ -227,3 +227,6 @@ az vm list -g Student-RG-1202818 --output table > vm_list_output1
  | 5  |Student-RG-1202818 |Pie Chart        |NA              |Last Month   |Service Family|NA           |![image-5](/Checkpoint5/CP5_images/5.png)|
  | 6  |Student-RG-1202818 |Pie Chart        |NA              |Last Month   |Product       |NA           |![image-6](/Checkpoint5/CP5_images/6.png)|
 
+### Part F - Create Customized Azure Dashboard
+
+![image-7](/Checkpoint5/CP5_images/7.png)
