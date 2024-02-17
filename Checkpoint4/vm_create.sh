@@ -30,6 +30,7 @@ else
                 --image  $image_name \
                 --size  $VM_SIZE \
                 --storage-sku $OS_DISK_SKU \
+                --security-type $SECURITY_TYPE \
                 --data-disk-delete-option Delete \
                 --nics  $nic_name \
                 --no-wait
@@ -63,7 +64,9 @@ else
                 --image  $image_name \
                 --size  $VM_SIZE \
                 --storage-sku $OS_DISK_SKU \
+                --security-type "Standard" \
                 --data-disk-delete-option Delete \
+                --security-type $SECURITY_TYPE \
                 --nics  $nic_name \
                 --ssh-key-values $public_sshkey_file \
                 --no-wait

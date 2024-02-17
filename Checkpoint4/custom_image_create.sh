@@ -70,7 +70,7 @@ echo
 
 os_type="Windows"
 vm=$VM_WC
-hyperv_gen="V2"
+hyperv_gen="V1"
 custom_image_create "$vm" "$os_type" "$hyperv_gen" "$target_version"
 vm=$VM_WS
 hyperv_gen="V1"
@@ -78,13 +78,13 @@ custom_image_create "$vm" "$os_type" "$hyperv_gen" "$target_version"
 
 os_type="Linux"
 vm=$VM_LR
-hyperv_gen="V2"
+hyperv_gen="V1"
 custom_image_create "$vm" "$os_type" "$hyperv_gen" "$target_version"
 vm=$VM_LS
-hyperv_gen="V2"
+hyperv_gen="V1"
 custom_image_create "$vm" "$os_type" "$hyperv_gen" "$target_version"
 
-echo "Iamge List"
+echo "Image List"
 az image list -g $RG_NAME --out table
 
 echo

@@ -19,7 +19,7 @@ if [[ $(az network nic list -g $RG_NAME -o tsv --query "[?name=='$nic_name']") ]
 then
     echo "exists!"
     echo "Deleteing NIC: $nic_name"
-    az network nic delete -g $RG_NAME --name $nic_name --yes
+    az network nic delete -g $RG_NAME --name $nic_name
 fi
 done
 

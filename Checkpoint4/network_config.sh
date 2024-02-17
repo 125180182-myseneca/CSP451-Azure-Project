@@ -7,14 +7,14 @@ source  ./logos.sh
 # Update the lines that are specific to your network 
 # /////////////////////////////////////////////////////////////
 
-RG_NAME="Student-RG-1202818"     # your student group
-LOCATION="CanadaCentral"    # your location
-ID="27"          #unique ID assigned to you
+RG_NAME=""     # your student group
+LOCATION=""    # your location
+ID=""          #unique ID assigned to you
 
-Student_vnet_name="Student-1202818-vnet"
-Student_vnet_address="10.28.178.0/24"
-Client_Subnet_name="Virtual-Desktop-Client"
-Client_Subnet_address="10.28.178.0/24"
+Student_vnet_name=""
+Student_vnet_address=""
+Client_Subnet_name=""
+Client_Subnet_address=""
 
 # ---------------------------------------------------
 # Networking - Virtual Networks
