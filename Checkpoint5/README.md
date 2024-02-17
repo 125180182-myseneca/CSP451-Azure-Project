@@ -11,9 +11,13 @@ ___
 
 ### Table of Contents
 
-1. [An Image](#An-Image)
+1. [Part A - Creating & Configuring VMs - Using Portal](#part-a---creating--configuring-vms---using-portal)
+2. [Part B - Enable IP_Forwarding - Using Portal](#part-b---enable-ip_forwarding---using-portal)
+3. [Part C - Basic Connectivity - VM Configuration](#part-c---basic-connectivity---vm-configuration)
+4. [Part D - Creating & Configuring VM Images - Using Portal](#part-d---creating--configuring-vm-images---using-portal)
+5. [Part E - Azure Cost Analysis Charts](#part-e---azure-cost-analysis-charts)
+6. [Part F - Create Customized Azure Dashboard](#part-f---create-customized-azure-dashboard)
 
-    [git_status_uncommitted.txt](git_status_uncommitted.txt)
 ---
 ### Part A - Creating & Configuring VMs - Using Portal
 
@@ -118,6 +122,8 @@ ___
 
         </details>
     
+
+----    
 ### Part B - Enable IP_Forwarding - Using Portal
 1. Check the status of ip-forwarding using the command az network nic ip-config show with output format as json. Include only the command not output including the --quey you used in your submission.
 
@@ -135,6 +141,8 @@ ___
         <summary>az network nic show -g $RG -n lr-27644_z1 --query "enableIPForwarding" --output json</summary>
     true
     </details>
+
+----
 
 ### Part C - Basic Connectivity - VM Configuration
 
@@ -180,6 +188,7 @@ ___
 ![LR_SS](/Checkpoint5/LR_SS.png)
 ![LS_SS](/Checkpoint5/LS_SS.png)
 
+----
 
 ### Part D - Creating & Configuring VM Images - Using Portal
 
@@ -216,6 +225,8 @@ az vm list -g Student-RG-1202818 --output table > vm_list_output1
 
     This was a tedious process as you have to go to the individual images one by one in the portal, and still must configure the VM's. I think to do this more effectively, we could use ARM templates, or even create a script which will automatically use the images to create the VM's.
 
+----
+
  ### Part E - Azure Cost Analysis Charts
 
  | No.|Scope              | Chart Type      | VIEW TYPE      | Date Range  | Group By     | Granularity | Example                                 |
@@ -226,6 +237,8 @@ az vm list -g Student-RG-1202818 --output table > vm_list_output1
  | 4  |Student-RG-1202818 |Pie Chart        |NA              |Last Month   |Service Name  |NA           |![image-4](/Checkpoint5/CP5_images/4.png)|
  | 5  |Student-RG-1202818 |Pie Chart        |NA              |Last Month   |Service Family|NA           |![image-5](/Checkpoint5/CP5_images/5.png)|
  | 6  |Student-RG-1202818 |Pie Chart        |NA              |Last Month   |Product       |NA           |![image-6](/Checkpoint5/CP5_images/6.png)|
+
+----
 
 ### Part F - Create Customized Azure Dashboard
 
