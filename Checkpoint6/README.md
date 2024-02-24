@@ -20,7 +20,7 @@
     <summary>LR-27</summary>
 
     `LR-27.CSP451-2241.com`
-    
+
     [LR_27_hostname.txt](/Checkpoint6/Files/LR-27_hostname.txt)
     ![LR_SS](/Checkpoint6/CP6_images//1.png)
 
@@ -34,6 +34,7 @@
 
     [LS_27_hostname.txt](/Checkpoint6/Files/LS-27_hostname.txt)
     ![LR_SS](/Checkpoint6/CP6_images/2.png)
+    
 
     </detail>
 
