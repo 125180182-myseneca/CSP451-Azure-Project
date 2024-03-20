@@ -7,9 +7,12 @@
 - **TEACHER’S NAME: Atoosa Nasiri
 
 ### Table of Contents
-1. [Part A - Working with Docker Desktop](#part-b---get-started-with-docker)
-2. [Part B - Get Started with Docker](#header2)
-3. [Part C - Working with Azure Container Registry (ACR)](#header3)
+1. [Part A - Working with Docker Desktop](#part-a---working-with-docker-desktop)
+2. [Part B - Get Started with Docker](#part-b---get-started-with-docker)
+3. [Part C - Working with Azure Container Registry (ACR)](#part-c---working-with-azure-container-registry-acr)
+
+### Part A - Working with Docker Desktop
+
 
 ### Part B - Get Started with Docker
 
@@ -69,3 +72,4 @@
 6. ![36.1](/Checkpoint7/images/36.1)
 
 ### Part C - Working with Azure Container Registry (ACR)
+
