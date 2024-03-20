@@ -23,13 +23,18 @@
 
 1. ![1](/Checkpoint7/images/1.png)
 
+
 2. ![2](/Checkpoint7/images/2.png)
+
 
 3. ![3](/Checkpoint7/images/3.png)
 
+
 4. ![4](/Checkpoint7/images/4.png)
 
+
 5. ![5](/Checkpoint7/images/5.png)
+
 
 ## Run A Container
 
