@@ -399,17 +399,17 @@ Query OK, 1 row affected (0.02 sec)
 ## Part D - Running Multi-Tier Python-Flask App Locally: Follow the instructions and answer all questions.
 
 1. ### Explore how the app works, retrieve one record and add at least one record from your previously added records. Include the screenshot of the record you have added.
-#1
-#2
+![1](/Checkpoint9/Checkpoint9-images/1.png)
+![2](/Checkpoint9/Checkpoint9-images/2.png)
 
 2. ### What happens if you try to fetch a record for an emp_id that does not exist? Include errors in your submission.
-#3
+![3](/Checkpoint9/Checkpoint9-images/3.png)
 
 ## Part E - Containerizing Multi-Tier Python-Flask App: Follow the instructions and answer all questions.
 
 1. ### Why did we use -p 8090:8080 for running the container? If you want to run more containers how should you modify this port?
-<p>We used 
+<p>We used -p 8090:8080 for running the container because -p 8080:8080 was already used for another container that is running in the python virtual environment. If we want to run more containers, we just modify the first port. The first port is the host port that is binded to the container's port(the second port). A port can only listen to one service at a time.
 
-4
-5
-6
+![4](/Checkpoint9/Checkpoint9-images/4.png)
+![5](/Checkpoint9/Checkpoint9-images/5.png)
+![6](/Checkpoint9/Checkpoint9-images/6.png)
