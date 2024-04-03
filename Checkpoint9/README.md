@@ -307,14 +307,109 @@ DONE!
 ```
 </details>
 
-
-
-
-
-
-
-
+---
 ## Part B - Create Azure Cluster Resources: Follow the instructions and answer all questions.
+
+**tle53@Host-VM-27:~$ hostnamectl**
+
+```
+ Static hostname: Host-VM-27
+       Icon name: computer-vm
+         Chassis: vm
+      Machine ID: a2f1b8b8d0bf41feb7a59b75eba28eeb
+         Boot ID: f42848c0ef504d56b75ccdeb0614411f
+  Virtualization: microsoft
+Operating System: Ubuntu 22.04.4 LTS
+          Kernel: Linux 6.5.0-1017-azure
+    Architecture: x86-64
+ Hardware Vendor: Microsoft Corporation
+  Hardware Model: Virtual Machine
+```
+
+**tle53@Host-VM-27:~$ sudo lsb_release -a**
+
+```
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 22.04.4 LTS
+Release:        22.04
+Codename:       jammy
+```
+
 ## Part C - Configure Host VM: Follow the instructions and answer all questions.
+
+1. ### Execute hostnamectl in your Host VM and embed the output from the terminal in your submission.
+**tle53@Host-VM-27:~$ docker --version**
+
+```
+Docker version 26.0.0, build 2ae903e
+```
+
+2. ### Execute lsb_release -a in your Host VM and embed the output from the terminal in your submission. 
+**tle53@Host-VM-27:~$ docker-compose --version**
+
+If the command fails, the command `docker-compose --version` could be used instead to verify if docker-compose is installed.
+
+3. **mysql> SELECT * FROM employee;**
+```
+mysql> SELECT * FROM employee;
++--------+------------+-----------+---------------+----------+
+| emp_id | first_name | last_name | primary_skill | location |
++--------+------------+-----------+---------------+----------+
+| 1      | Amanda     | Williams  | Smile         | local    |
+| 2      | Alan       | Williams  | Empathy       | alien    |
++--------+------------+-----------+---------------+----------+
+2 rows in set (0.00 sec)
+```
+
+4. 
+**mysql> INSERT INTO employee VALUES ('3','Thuan','Le','Awesome','Space');**
+Query OK, 1 row affected (0.02 sec)
+
+**mysql> INSERT INTO employee VALUES ('4','Atoosa','Nasiri','Cool','Mars');**
+Query OK, 1 row affected (0.02 sec)
+
+**mysql> INSERT INTO employee VALUES ('5','CSP451','Class','Incredible','Saturn');**
+Query OK, 1 row affected (0.03 sec)
+
+**mysql> INSERT INTO employee VALUES ('6','Number9','Checkpoint','Astounding','Jupiter');**
+Query OK, 1 row affected (0.01 sec)
+
+**mysql> INSERT INTO employee VALUES ('7','Barack','Obama','Funny','Seneca');**
+Query OK, 1 row affected (0.02 sec)
+
+**mysql> SELECT * FROM employee;**
+
+```
++--------+------------+------------+---------------+----------+
+| emp_id | first_name | last_name  | primary_skill | location |
++--------+------------+------------+---------------+----------+
+| 1      | Amanda     | Williams   | Smile         | local    |
+| 2      | Alan       | Williams   | Empathy       | alien    |
+| 3      | Thuan      | Le         | Awesome       | Space    |
+| 4      | Atoosa     | Nasiri     | Cool          | Mars     |
+| 5      | CSP451     | Class      | Incredible    | Saturn   |
+| 6      | Number9    | Checkpoint | Astounding    | Jupiter  |
+| 7      | Barack     | Obama      | Funny         | Seneca   |
++--------+------------+------------+---------------+----------+
+7 rows in set (0.00 sec)
+
+```
+
 ## Part D - Running Multi-Tier Python-Flask App Locally: Follow the instructions and answer all questions.
+
+1. ### Explore how the app works, retrieve one record and add at least one record from your previously added records. Include the screenshot of the record you have added.
+#1
+#2
+
+2. ### What happens if you try to fetch a record for an emp_id that does not exist? Include errors in your submission.
+#3
+
 ## Part E - Containerizing Multi-Tier Python-Flask App: Follow the instructions and answer all questions.
+
+1. ### Why did we use -p 8090:8080 for running the container? If you want to run more containers how should you modify this port?
+<p>We used 
+
+4
+5
+6
