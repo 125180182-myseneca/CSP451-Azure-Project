@@ -12,6 +12,7 @@
 3. [Part C - Configure Host VM](#part-c---configure-host-vm-follow-the-instructions-and-answer-all-questions)
 4. [Part D - Running Multi-Tier Python-Flask App Locally](#part-d---running-multi-tier-python-flask-app-locally-follow-the-instructions-and-answer-all-questions)
 5. [Part E - Containerizing Multi-Tier Python-Flask App](#part-e---containerizing-multi-tier-python-flask-app-follow-the-instructions-and-answer-all-questions)
+6. [Part F - Cost Analysis Report](#cost-analysis-report)
 
 
 ## Part A - Clean Network Resources: Follow the instructions and answer all questions.
@@ -413,3 +414,7 @@ Query OK, 1 row affected (0.02 sec)
 ![4](/Checkpoint9/Checkpoint9-images/4.png)
 ![5](/Checkpoint9/Checkpoint9-images/5.png)
 ![6](/Checkpoint9/Checkpoint9-images/6.png)
+
+## Cost Analysis Report
+
+![7](/Checkpoint9/Checkpoint9-images/7.png)
