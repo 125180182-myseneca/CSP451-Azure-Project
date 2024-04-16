@@ -81,6 +81,8 @@ f27a8d758fc1   aks-store-demo-store-front           "/docker-entrypoint.…"   3
 
 ---
 
+**Testing the web application**
+
 ![4](/Final-Project/termproject-images/4.png)
 
 ---
@@ -89,8 +91,6 @@ f27a8d758fc1   aks-store-demo-store-front           "/docker-entrypoint.…"   3
 ## Create container registry
 
 **az acr create --resource-group Student-RG-1202818 --name tle53acr --sku Basic**
-
-![5](/Final-Project/termproject-images/5.png)
 
 <details>
 <summary>az acr create --resource-group Student-RG-1202818 --name tle53acr --sku Basic</summary>
@@ -169,6 +169,8 @@ f27a8d758fc1   aks-store-demo-store-front           "/docker-entrypoint.…"   3
 ```
 
 </details>
+
+![5](/Final-Project/termproject-images/5.png)
 
 ---
 
