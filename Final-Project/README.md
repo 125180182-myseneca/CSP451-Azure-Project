@@ -12,8 +12,8 @@
 1. [Prepare application for AKS](#prepare-application-for-aks)
 2. [Create container registry](#create-container-registry)
 3. [Create Kubernetes cluster](#create-kubernetes-cluster)
-4. [Deploy containerized application](#header)
-5. (Optional) [Use PaaS services](#header)
+4. [Deploy containerized application](#deploy-containerized-application)
+5. (Optional) [Use PaaS services](#header) **Skipped**
 6. [Scale application](#scale-application)
 7. [Upgrade cluster](#upgrade-cluster)
 
