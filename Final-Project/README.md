@@ -23,8 +23,6 @@
 
 **PS C:\Users\lemon\Desktop\Winter 2024\CSP451\aks-store-demo> docker container list**
 
-![1](/Final-Project/termproject-images/1.png)
-
 <details>
 
 <summary>docker container list</summary>
@@ -38,11 +36,11 @@ f27a8d758fc1   aks-store-demo-store-front           "/docker-entrypoint.…"   2
 
 </details>
 
+![1](/Final-Project/termproject-images/1.png)
+
 ---
 
 **PS C:\Users\lemon\Desktop\Winter 2024\CSP451\aks-store-demo> docker images**
-
-![2](/Final-Project/termproject-images/2.png)
 
 <details>
 
@@ -58,11 +56,12 @@ rabbitmq                         3.11.17-management-alpine   79a570297657   12 m
 
 </details>
 
+![2](/Final-Project/termproject-images/2.png)
+
 ---
 
 **PS C:\Users\lemon\Desktop\Winter 2024\CSP451\aks-store-demo> docker ps**
 
-![3](/Final-Project/termproject-images/3.png) 
 
 <details>
 
@@ -77,6 +76,8 @@ f27a8d758fc1   aks-store-demo-store-front           "/docker-entrypoint.…"   3
 ```
 
 </details>
+
+![3](/Final-Project/termproject-images/3.png) 
 
 ---
 
