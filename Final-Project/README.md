@@ -23,7 +23,7 @@
 
 **PS C:\Users\lemon\Desktop\Winter 2024\CSP451\aks-store-demo> docker container list**
 
-1.
+![1](/Final-Project/termproject-images/1.png)
 
 <details>
 
@@ -42,7 +42,7 @@ f27a8d758fc1   aks-store-demo-store-front           "/docker-entrypoint.…"   2
 
 **PS C:\Users\lemon\Desktop\Winter 2024\CSP451\aks-store-demo> docker images**
 
-2.
+![2](/Final-Project/termproject-images/2.png)
 
 <details>
 
@@ -62,7 +62,7 @@ rabbitmq                         3.11.17-management-alpine   79a570297657   12 m
 
 **PS C:\Users\lemon\Desktop\Winter 2024\CSP451\aks-store-demo> docker ps**
 
-3. 
+![3](/Final-Project/termproject-images/3.png) 
 
 <details>
 
@@ -78,9 +78,9 @@ f27a8d758fc1   aks-store-demo-store-front           "/docker-entrypoint.…"   3
 
 </details>
 
+---
 
-
-4.
+![4](/Final-Project/termproject-images/4.png)
 
 ---
 
@@ -89,7 +89,7 @@ f27a8d758fc1   aks-store-demo-store-front           "/docker-entrypoint.…"   3
 
 **az acr create --resource-group Student-RG-1202818 --name tle53acr --sku Basic**
 
-5.
+![5](/Final-Project/termproject-images/5.png)
 
 <details>
 <summary>az acr create --resource-group Student-RG-1202818 --name tle53acr --sku Basic</summary>
@@ -187,7 +187,7 @@ aks-store-demo/store-front
 
 </details>
 
-6.
+![6](/Final-Project/termproject-images/6.png)
 
 ---
 
@@ -207,13 +207,13 @@ aks-nodepool1-40236670-vmss000001   Ready    agent   17m   v1.28.5
 
 </details>
 
-7.
+![7](/Final-Project/termproject-images/7.png)
 
 ## Deploy containerized application
 
 **PS C:\Users\lemon\Desktop\Winter 2024\CSP451\aks-store-demo> kubectl get pods**
 
-8.
+![8](/Final-Project/termproject-images/8.png)
 
 ---
 
@@ -230,13 +230,13 @@ store-front   LoadBalancer   10.0.3.9     20.175.207.146   80:31570/TCP   10m
 
 </details>
 
-9.
+![9](/Final-Project/termproject-images/9.png)
 
 ---
 
-10.
+![10](/Final-Project/termproject-images/10.png)
 
-11.
+![11](/Final-Project/termproject-images/11.png)
 
 ## Scale application
 
@@ -485,7 +485,7 @@ aks-nodepool1-40236670-vmss000002   Ready    agent   2m3s   v1.28.5
 
 </details>
 
-12
+![12](/Final-Project/termproject-images/12.png)
 
 ---
 
@@ -716,7 +716,7 @@ aks-nodepool1-40236670-vmss000001   Ready    agent   71m   v1.28.5
 
 </details>
 
-13.
+![13](/Final-Project/termproject-images/13.png)
 
 ## Upgrade cluster
 
