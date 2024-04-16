@@ -237,6 +237,8 @@ store-front   LoadBalancer   10.0.3.9     20.175.207.146   80:31570/TCP   10m
 
 ---
 
+**Testing the web application through Kubernetes External IP**
+
 ![10](/Final-Project/termproject-images/10.png)
 
 ![11](/Final-Project/termproject-images/11.png)
