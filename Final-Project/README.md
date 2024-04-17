@@ -985,3 +985,14 @@ Since control-plane-only argument is not specified, this will upgrade the contro
 <details>
 <summary>az aks show --resource-group Student-RG-1202818 --name myAKSCluster --output table</summary>
 </details>
+
+| No. | Scope              | Chart Type       | VIEW Type        | Date Range  | Group By       | Granularity | Image |
+|-----|--------------------|------------------|------------------|-------------|----------------|-------------|-------|
+| 1   | Student-RG-1202818 | Column (Stacked) | DailyCosts       | Last 7 Days | Resource       | Daily       |![14](/Final-Project/termproject-images/14.png)|
+| 2   | Student-RG-1202818 | Column (Stacked) | DailyCosts       | Last 7 Days | Service        | Daily       |![15](/Final-Project/termproject-images/15.png)|
+| 3   | Student-RG-1202818 | Area             | AccumulatedCosts | Last 7 Days | Resource       | Accumulated |![16](/Final-Project/termproject-images/16.png)|
+| 4   | Student-RG-1202818 | Pie Chart        | NA               | Last Month  | Service Name   | NA          |![17](/Final-Project/termproject-images/17.png)|
+| 5   | Student-RG-1202818 | Pie Chart        | NA               | Last Month  | Service Family | NA          |![18](/Final-Project/termproject-images/18.png)|
+| 6   | Student-RG-1202818 | Pie Chart        | NA               | Last Month  | Product        | NA          |![19](/Final-Project/termproject-images/19.png)|
+
+![20](/Final-Project/termproject-images/20.png)
