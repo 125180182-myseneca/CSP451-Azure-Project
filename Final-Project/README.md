@@ -16,6 +16,7 @@
 5. (Optional) [Use PaaS services](#header) **Skipped**
 6. [Scale application](#scale-application)
 7. [Upgrade cluster](#upgrade-cluster)
+8. [Cost Analysis](#cost-analysis)
 
 ----
 
@@ -985,6 +986,8 @@ Since control-plane-only argument is not specified, this will upgrade the contro
 <details>
 <summary>az aks show --resource-group Student-RG-1202818 --name myAKSCluster --output table</summary>
 </details>
+
+## Cost Analysis
 
 | No. | Scope              | Chart Type       | VIEW Type        | Date Range  | Group By       | Granularity | Image |
 |-----|--------------------|------------------|------------------|-------------|----------------|-------------|-------|
